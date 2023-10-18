@@ -1,0 +1,89 @@
+1. What are Linux Commands?
+ans:Linux commands are text-based instructions used to interact with the Linux operating system. 
+	They are entered into the command-line interface (CLI) to perform tasks such as file manipulation, system configuration, process
+ 	management, and more.Common Linux commands include "ls" (list files), "cd" (change directory), "mkdir" (create a directory), and
+ 	"grep" (search text).
+
+--Yum and Apt are package management tools
+--------------------------------------------------------------------------------------------
+2. Ping command
+ans:Ping is a network utility that checks the reachability of a host and measures round-trip time for data packets.
+
+curl command is a versatile tool for making HTTP requests from the command line
+
+wget command is a utility for non-interactive downloading files from the web
+
+top command is a built-in operating system utility that provides a dynamic, real-time view of system performance. 
+--------------------------------------------------------------------------------------------
+3. Ifconfig
+ans:command to view and configure network interfaces on Unix-like systems, but it's deprecated in favor of ip and ipconfig.
+--------------------------------------------------------------------------------------------
+4. Chmod
+ans:chmod is a command used in Unix-like operating systems to change permissions (read, write, execute) on files and directories.
+--------------------------------------------------------------------------------------------
+5. Chown
+ans:chown is a command in Unix-like operating systems used to change the owner of a file or directory
+--------------------------------------------------------------------------------------------
+6. Crone job and crone app
+ans:	cron tab:that is used to schedule and manage recurring tasks or jobs.
+	
+	Cron Job: A cron job is a scheduled task or script that runs at specified intervals on Unix-like operating systems. 
+	It is managed by the cron daemon and is used for automating repetitive tasks, 
+	such as data backups, system maintenance, and sending periodic reports.
+
+	Cron App (Cron Application): This term is not commonly used, but it might refer to software or applications 
+	that provide a user-friendly interface for managing and scheduling cron jobs. 
+	These applications make it easier for users to set up and manage cron tasks without having to edit crontab files directly.
+--------------------------------------------------------------------------------------------
+7. How to run shell script
+ans:Create the script
+	Make it executable with chmod +x
+	Run the script with ./script.sh
+--------------------------------------------------------------------------------------------
+8.head command
+ans: The `head` command in Linux is used to display the beginning (the first few lines) of a text file. By default, 
+	it shows the first 10 lines of a file. You can specify a different number of lines to display by using the `-n` option. 
+	For example, to display the first 5 lines of a file, you can use:
+	head -n 5 filename
+--------------------------------------------------------------------------------------------
+9. Explain the differences between Linux and Unix.
+ans:Linux is a Unix-like operating system, but it's not a direct descendant of any specific Unix version. 
+	Unix is a family of operating systems that includes proprietary versions, while Linux is open source and has many distributions.
+--------------------------------------------------------------------------------------------
+10. What is the Linux kernel?
+ans:The Linux kernel is the core of the Linux operating system. It manages hardware resources, provides essential services, 
+	and serves as an intermediary between user applications and the hardware.
+--------------------------------------------------------------------------------------------
+11.What is a distribution in the context of Linux?
+ans:A Linux distribution, or distro, is a complete package of the Linux operating system. 
+	It includes the Linux kernel, system libraries, software applications, and a package management system. 
+	Popular examples include Ubuntu, CentOS, and Debian.
+--------------------------------------------------------------------------------------------
+12. How do you open a terminal in Linux, and what are some common terminal commands?
+ans:You can open a terminal by pressing Ctrl+Alt+T or using the application menu. 
+	Common commands include ls (list files), cd (change directory), pwd (print working directory), and mkdir (create a directory).
+--------------------------------------------------------------------------------------------
+13. What is the root user in Linux, and why should it be used sparingly?
+ans:The root user is the superuser with unrestricted system privileges. 
+	It should be used sparingly because any mistakes or malicious actions can have severe consequences on the system.
+--------------------------------------------------------------------------------------------
+14. Explain the file permissions in Linux (chmod, chown, chgrp).
+ans:File permissions control who can read, write, and execute files. chmod changes permissions, chown changes the owner, 
+	and chgrp changes the group ownership of a file.
+--------------------------------------------------------------------------------------------
+15. What is a shell in Linux, and what are some commonly used shells?
+ans:A shell is a command-line interface that allows users to interact with the operating system. 
+	Common shells include Bash, Zsh, and Fish.
+--------------------------------------------------------------------------------------------
+16. Differentiate between a process and a thread in Linux.
+ans:A process is an independent program with its own memory space, 
+	while a thread is a unit of a process that shares the same memory space. 
+	Threads are lighter and share resources with the parent process.
+--------------------------------------------------------------------------------------------
+17. Explain the purpose of the ls command and its common options.
+ans:The ls command is used to list files and directories. 
+	Common options include -l (long format), -a (show hidden files), and -h (human-readable sizes).
+--------------------------------------------------------------------------------------------
+1  8. What is Linux?
+ans:Linux is an open-source Unix-like operating system kernel that serves as the core of many different Linux distributions. 
+	It was created by Linus Torvalds and released in 1991.

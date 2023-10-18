@@ -1,0 +1,63 @@
+1. Types of joins in sql
+ans:INNER JOIN:- Returns matching rows from both tables.
+	LEFT JOIN (or LEFT OUTER JOIN):- Returns all rows from the left table and matching rows from 		the right table.
+	RIGHT JOIN (or RIGHT OUTER JOIN):- Returns all rows from the right table and matching rows 		from the left table.
+	FULL JOIN (or FULL OUTER JOIN):- Returns all rows when there is a match in either the left or 		right table.
+	CROSS JOIN:- Returns the Cartesian product of rows from both tables.
+	SELF JOIN:- Joins a table with itself to compare or combine rows within the same table.
+--------------------------------------------------------------------------------------------
+2. Primary Key vs. Foreign Key:
+ans:Primary Key: Unique identifier for rows in a table.
+	Foreign Key: Links one table's data to another, enforcing referential integrity.it ensuring that values in the foreign key column match values in the primary key of another table.
+--------------------------------------------------------------------------------------------
+3. What is DDL and DML
+ans:DDL: DDL statements are used to define and manage the structure of the database itself
+	CREATE,alter,drop
+	DML:DML statements are used to manipulate data stored in the database
+	select,insert,update,delete
+--------------------------------------------------------------------------------------------
+4. Clause in SQL
+ans:In SQL, a clause is a specific section of a SQL statement that serves a particular purpose.
+	Common SQL clauses include SELECT (for querying data), WHERE (for filtering data), JOIN (for combining data from multiple tables), 
+	and ORDER BY (for sorting results).
+--------------------------------------------------------------------------------------------
+5. Normalization in Database Design:
+ans:Normalization reduces data redundancy, ensures integrity, and organizes data into related tables.
+--------------------------------------------------------------------------------------------
+6. SQL SELECT Statement:
+ans:Retrieves data from a database table with options for filtering, sorting, and calculations.
+--------------------------------------------------------------------------------------------
+7. SQL JOIN Operation:
+ans:Combines data from two tables based on a related column to create a unified result set.
+--------------------------------------------------------------------------------------------
+8. SQL Subquery:
+ans:A subquery is a nested query within another SQL statement, used for data retrieval or filtering within a larger query.
+--------------------------------------------------------------------------------------------
+10. SQL View vs. Table:
+ans:An SQL view is a virtual table that displays the result of a query, while a table stores actual data.
+--------------------------------------------------------------------------------------------
+11. Database Indexing:
+ans:Indexing is a database optimization technique that speeds up data retrieval by creating a data structure that allows for quick lookup.
+--------------------------------------------------------------------------------------------
+12. Handling Database Transactions in SQL:
+ans:Use the BEGIN TRANSACTION, COMMIT, and ROLLBACK statements to manage transactions in SQL.
+--------------------------------------------------------------------------------------------
+13 Clustered vs. Non-Clustered Index:
+ans:Clustered Index: Dictates the physical order of data rows in a table.
+	Non-Clustered Index: Provides a separate, ordered data structure for quick data retrieval.
+--------------------------------------------------------------------------------------------
+14. what are the primary types of databases
+ans: Relational Databases (RDBMS):
+	These databases use structured query language (SQL) and organize data into tables with rows and columns.
+	Examples include MySQL, PostgreSQL, Oracle, and Microsoft SQL Server.
+
+	NoSQL Databases:
+	These databases handle unstructured or semi-structured data and are suitable for handling large volumes of data and high read/write operations.
+	Types of NoSQL databases include document stores (e.g., MongoDB), key-value stores (e.g., Redis), column-family stores (e.g., Cassandra), 
+	and graph databases (e.g., Neo4j).
+--------------------------------------------------------------------------------------------
+15.  ACID Properties in Database Transactions:
+ans:ACID stands for Atomicity, Consistency, Isolation, and Durability, ensuring reliability in database transactions.
+--------------------------------------------------------------------------------------------
+16. what is foreign key
+ans:A foreign key is a field in a relational database table that is used to establish a link between two tables.It enforces referential integrity, ensuring that values in the foreign key column match values in the primary key of another table.	It helps maintain relationships between tables and is used to prevent orphaned records.

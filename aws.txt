@@ -1,0 +1,48 @@
+1. IAM 
+ans:IAM (Identity and Access Management) is a crucial service in AWS that allows you to control and manage access to AWS resources. 
+	It involves creating and managing users, groups, and roles, each with associated permissions.
+--------------------------------------------------------------------------------------------
+2.Types of ec2 instances
+ans:the AWS EC2 Instance Types are as follows:
+	General Purpose Instances.
+	Compute Optimized Instances.
+	Memory-Optimized Instances.
+	Storage Optimized Instances.
+	Accelerated Computing Instances.
+--------------------------------------------------------------------------------------------
+3. storage classes in S3
+ans:	Standard: General-purpose storage.
+	Intelligent-Tiering: Automatically moves data to the right tier.
+	One Zone-IA: Inexpensive infrequent access in one zone.
+	Glacier: Long-term archiving with slow retrieval.
+	Deep Archive: Lowest-cost storage for rarely accessed data.
+--------------------------------------------------------------------------------------------
+4. Security group
+ans:AWS Security Group is a virtual firewall that controls inbound and outbound traffic for AWS resources. 
+	It uses rules to define what traffic is allowed or denied, is stateful, and follows a default deny approach for inbound traffic.
+--------------------------------------------------------------------------------------------
+5.What is AWS Storage?
+ans:AWS offers various storage services, including Amazon S3 (Simple Storage Service) for object storage, 
+	Amazon EBS (Elastic Block Store) for block storage, Amazon RDS (Relational Database Service) for relational database storage, and 	more. AWS storage services provide scalable and durable storage solutions for various use cases.
+--------------------------------------------------------------------------------------------
+6. vpc
+ans: A VPC is a private network in the cloud that lets securely run our online services and keep them separate from other users.
+--------------------------------------------------------------------------------------------
+7. What are Instance Types?
+ans:In the context of cloud computing, "instance types" refer to predefined configurations of virtual machines offered by cloud providers
+	like Amazon Web Services (AWS). These configurations specify the amount of CPU, memory, storage, and other resources allocated to 	a virtual machine instance.
+--------------------------------------------------------------------------------------------
+8. AMI
+ans:AMI stands for Amazon Machine Image. In AWS, an AMI is a pre-configured virtual machine image used as a template for creating EC2 instances. 
+	It includes the operating system, application server, and any additional software required to run applications on an instance. 
+	AMIs can be public, shared, or private, and they are a fundamental component for launching EC2 instances with various configurations and software stacks.
+--------------------------------------------------------------------------------------------
+9. AWS cloud storages
+ans:Amazon S3 (Simple Storage Service):- A scalable, object-based storage service that offers industry-leading durability, availability, and performance. 
+	It's commonly used for storing and retrieving large amounts of data, hosting static websites, and as a foundation for data lakes.
+
+	Amazon EBS (Elastic Block Store):- Provides block-level storage volumes for use with Amazon EC2 instances. 
+	It's suitable for applications that require specific file systems, databases, or direct block access.
+
+	Amazon EFS (Elastic File System):- A fully managed network file system that can be shared across multiple EC2 instances. 
+	It's ideal for shared workloads and applications that require file storage.

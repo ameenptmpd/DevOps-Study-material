@@ -1,0 +1,42 @@
+1. What is Python?
+ans:Python is a high-level, interpreted programming language known for its simplicity, readability, 	and versatility. 
+	It is widely used for web development, data analysis, machine learning, scientific computing, and more. 
+	Python's syntax emphasizes code readability and ease of use.
+--------------------------------------------------------------------------------------------
+2. Why python is more handy than java
+ans:- Simplicity and Readability:- Python's clean and concise syntax is easier to learn and read, making it more approachable for developers.
+
+	- High-Level Abstraction:- Python's high-level nature and extensive standard libraries simplify many tasks, reducing development time and effort.
+
+	- Dynamic Typing:- Python's dynamic typing allows flexibility in variable types, making code more adaptable and less verbose.
+
+	- Expressive Language:- Python often requires fewer lines of code than Java to accomplish the same task, resulting in more efficient development.
+
+	- Rich Ecosystem:- Python offers a wide range of libraries and frameworks, enhancing its versatility for various applications.
+
+	- Interpreted Language:- Python's interpreted nature speeds up development and debugging, as code changes are quickly reflected without compilation.
+
+	- Strong Community:- Python has a large and active community, providing support, resources, and a wealth of third-party packages.
+--------------------------------------------------------------------------------------------
+4. Python libraies
+ans:Python has a vast ecosystem of libraries. Some popular ones include:
+		Django: Web framework for building web applications.
+		Flask: Lightweight web framework for web development.
+		NumPy: For numerical computing and working with arrays.
+		Pandas: Data manipulation and analysis.
+		Matplotlib: Data visualization.
+		Requests: HTTP library for making web requests.
+		Scikit-Learn: Machine learning and data mining.
+		TensorFlow and PyTorch: Deep learning and neural networks.
+		SQLAlchemy: Database ORM (Object-Relational Mapping).
+		Beautiful Soup: Web scraping and parsing HTML/XML.
+--------------------------------------------------------------------------------------------
+5. datatypes in python
+ans:str, int, float, complex,list, tuple, range
+
+In Python, the pop method is used to remove and return the element from a list or dictionary based on the specified index or key
+--------------------------------------------------------------------------------------------
+6. What is Python Flask?
+ans:Flask is a micro web framework for Python that simplifies web application development. 
+	It provides the tools and libraries needed to create web applications quickly and efficiently. 
+	Flask is known for its minimalistic approach, allowing developers to choose components and extensions based on project requirements.

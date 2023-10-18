@@ -1,0 +1,80 @@
+ 1. What is CI/CD (Continuous Integration/Continuous Deployment)?
+ans:CI/CD is a software development practice that involves the continuous integration of code changes into a shared repository,
+	followed by automated testing and deployment to production or staging environments. It aims to improve development efficiency, code quality,and the speed of delivering software updates.
+--------------------------------------------------------------------------------------------
+2. Continuous Delivery/Deployment
+ans:Continuous delivery is about ensuring that every good build is potentially ready for production release, 
+	Continuous deployment is about automating the release of a good build to the production environments
+--------------------------------------------------------------------------------------------
+3. A monolithic application is a software architecture where all components and functions are tightly interconnected in a single, unified codebase. This contrasts with modular and scalable architectural approaches like microservices. Monolithic apps can be harder to maintain and scale but are simpler for smaller applications.
+
+Microservices is a software design approach where an application is divided into small, independent services that can be developed, deployed, and scaled separately. Each service handles a specific function, promoting flexibility, scalability, and rapid development.
+--------------------------------------------------------------------------------------------
+3. what is centralized application?
+ans:A centralized application is a software system where all components, data, 
+	and processing are concentrated in a single location or on a central server.
+--------------------------------------------------------------------------------------------
+4. multi-tiered application
+ans:multi-tiered application as a software architecture that divides an application into three main layers.
+	Presentation Tier,Application Tier and Data Tier.These layers are connected through well-defined interfaces, 
+	and the separation allows for scalability, maintainability, and flexibility in the software. 
+	Each tier performs specific functions and communicates with the adjacent tiers, making it easier to manage 
+	and scale the application as needed.
+--------------------------------------------------------------------------------------------
+5. What is Public Cloud, Private Cloud and hybrid Cloud
+ans:Public Cloud: Cloud services provided by third parties to the general public over the internet.
+	Private Cloud: Cloud resources provisioned for a single organization or user group, offering more control and security.
+	Hybrid Cloud: A combination of public and private clouds, allowing data and applications to be shared for flexibility.
+--------------------------------------------------------------------------------------------
+6. Benefits of Cloud Computing
+ans:
+	Cost-Efficiency:- Pay-as-you-go pricing reduces capital expenses and allows scaling resources as needed.
+	Scalability:- Easily scale resources up or down to meet demand, promoting agility.
+	Reliability:- Cloud providers offer high availability and redundancy, minimizing downtime.
+	Security:- Many providers offer robust security features and compliance certifications.
+	Flexibility:- Access resources from anywhere with an internet connection.
+	Automatic Updates:- Cloud providers handle infrastructure updates, ensuring security and performance.
+	Disaster Recovery:- Cloud solutions often include backup and recovery options.
+	Collaboration:- Facilitates real-time collaboration among remote teams.
+	Environmentally Friendly:- Shared resources reduce energy consumption.
+	Innovation:- Cloud enables quick adoption of new technologies and services.
+--------------------------------------------------------------------------------------------
+7. kernel
+ans: it is the core of an operating system. it makes communication between the hardware and software
+	roles:
+	-file management
+	-process management
+	-i/o management
+	-memmory management
+	-device management
+--------------------------------------------------------------------------------------------
+8. What is the software development life cycle, and why is it important in application development?
+ans:The Software Development Life Cycle (SDLC) is a structured process for software development, 
+	essential for ensuring high-quality, on-time, and on-budget application development. 
+	It provides:-
+	Quality Assurance:- Early issue identification and resolution reduce defects.
+	Project Management:- Phases and milestones aid project planning and tracking.
+	Communication:- Clear process improves collaboration among teams.
+	Risk Management:- Risks are identified and managed throughout the cycle.
+	Stakeholder Involvement:- Input and feedback from stakeholders.
+	Documentation:- Comprehensive documentation aids maintenance.
+	Consistency:- Standardized approach leads to consistent results.
+--------------------------------------------------------------------------------------------
+9. differences between web applications and mobile applications?
+ans:Web applications are accessed through web browsers on desktop or mobile devices and require an internet connection. 
+	They are platform-independent and can run on various operating systems. 
+	Mobile applications,are specifically designed for smartphones and tablets.
+--------------------------------------------------------------------------------------------
+10. What is the role of databases in application development
+ans:Databases play a crucial role in application development, serving as the backbone for storing, managing, and retrieving data
+	Data Storage:- They store and manage application data.
+	Data Retrieval:- Enable data retrieval for application use.
+	Data Integrity:- Enforce data consistency and accuracy.
+	Security:- Protect sensitive data with access controls.
+	Scalability:- Support growth in data and user load.
+	Concurrency Control:- Manage simultaneous data access.
+	Backup and Recovery:- Ensure data safety and availability.
+	Reporting:- Enable data-driven decision-making.
+	Audit Trails:- Record changes for compliance and troubleshooting.
+--------------------------------------------------------------------------------------------
+
