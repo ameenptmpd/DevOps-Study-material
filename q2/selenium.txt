@@ -1,0 +1,24 @@
+1. What is Selenium?
+	Selenium is an open-source testing framework for automating web browsers. It allows you to automate interactions with web applications, perform testing, and scrape web data.
+--------------------------------------------------------------------------------------------
+2. Selenium Benefits
+	- Automation of repetitive tasks.
+	- Cross-browser and cross-platform testing.
+	- Supports multiple programming languages.
+	- Integration with various testing frameworks.
+	- Open-source and an active community.
+--------------------------------------------------------------------------------------------
+3. What is TestNG and its Framework?
+	TestNG is a testing framework that is often used in conjunction with Selenium for test automation. It provides features like parallel test execution, test configuration, and detailed reporting.
+--------------------------------------------------------------------------------------------
+4. why TestNG is good Benefits
+TestNG is good because it supports annotations, parallel execution, grouping, prioritization, parameterization, data-driven testing, listeners, test configuration, report generation, and offers strong community support.
+--------------------------------------------------------------------------------------------
+5. Automation Testing Benefits
+	- Faster test execution.
+	- Improved test coverage.
+	- Reusability of test scripts.
+	- Consistency in test results.
+	- Ability to run tests in parallel.
+	- Enhanced reporting and traceability.
+--------------------------------------------------------------------------------------------

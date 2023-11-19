@@ -1,0 +1,62 @@
+1. What is Terraform:
+	Terraform is an open-source infrastructure-as-code tool that allows to define, provision, and manage infrastructure and resources across various cloud providers 
+	and on-premises environments. It uses declarative configuration files to define infrastructure, making it reproducible and predictable.
+--------------------------------------------------------------------------------------------------------
+2. what is the use of terraform plan and apply
+  - terraform plan: This command analyzes Terraform configuration files and displays an execution plan showing what changes would be made to the infrastructure. It doesn't make any changes but helps understand the impact of our configuration.
+  - terraform apply: This command applies the changes specified in your Terraform configuration to create, modify, or delete resources in your infrastructure. It takes the plan created by terraform plan and executes it, making the desired changes to the infrastructure.
+--------------------------------------------------------------------------------------------------------
+what is Terraform state file
+	A Terraform state file is a file that stores information about the resources that Terraform manages. 
+	It is used by Terraform to track which resources exist, their attributes, and their relationships to other resources.
+	
+Here is a short summary of the key points:
+	- Terraform needs to store state to track which resources exist and their attributes, to track the relationships 	  between resources, and to improve performance for large infrastructures.
+	- Best practices for managing Terraform state include storing it in a remote location, backing it up regularly, 	  using version control, and being careful when sharing it with others.
+--------------------------------------------------------------------------------------------------------
+Terraform advantages
+	- Consistency: Terraform uses a high-level configuration language to define your infrastructure, which means that you can specify the desired state of your infrastructure in a consistent and predictable way. This helps to reduce errors and ensure that your infrastructure is always configured correctly.
+	- Reusability: You can define reusable modules in Terraform, which can be used to create and manage complex infrastructure components. This can save you time and effort, and help you to ensure that your infrastructure is consistent and well-organized.
+	- Portability: Terraform can be used to manage infrastructure on a variety of cloud providers, as well as on-premises. This gives you the flexibility to choose the right platform for your needs, without having to lock yourself into a particular vendor.
+	- Collaboration: Terraform stores its configuration in human-readable files, which makes it easy to collaborate with other engineers on your infrastructure projects. You can also use version control to track changes to your configuration and to roll back to previous versions if necessary.
+	- Automation: Terraform can be used to automate the deployment and management of your infrastructure. This can help you to save time and effort, and to reduce the risk of human error.
+--------------------------------------------------------------------------------------------------------
+terraform verify
+	The terraform verify command is used to validate the syntax and internal consistency of a Terraform configuration. 
+	It does this by reading the Terraform configuration and checking for errors, such as:
+		- Invalid resource type names or attribute names
+		- Invalid attribute values
+		- Duplicate resource definitions
+		- Circular resource dependencies
+--------------------------------------------------------------------------------------------------------
+provider in Terraform
+	- A provider in Terraform is a plugin that allows Terraform to interact with a specific infrastructure platform or 	service.
+	Providers are responsible for implementing the resource types and data sources that Terraform can use to 	manage infrastructure.
+
+	- There are many different providers available, including providers for popular cloud platforms like AWS, Azure,
+	and Google Cloud Platform, as well as providers for other infrastructure platforms like Kubernetes and VMware.
+--------------------------------------------------------------------------------------------------------
+What is lock.hcl in Terraform?
+	The lock.hcl file is a dependency lock file that tracks the specific versions of Terraform providers and modules that are required to run a Terraform configuration. 
+	Terraform automatically creates and updates the lock file each time you run the terraform init command.
+--------------------------------------------------------------------------------------------------------
+Why is lock.hcl important?
+	The lock file is important because it ensures that everyone who is working on a Terraform configuration is using the same versions of the providers and modules. 
+	This helps to prevent conflicts and errors.
+--------------------------------------------------------------------------------------------------------
+When should I use lock.hcl?
+	You should use the lock.hcl file whenever possible, especially if you are collaborating with other people on a Terraform configuration. 
+	The lock file will help to ensure that everyone is on the same page and that your configuration is consistent and reproducible.
+--------------------------------------------------------------------------------------------------------
+3. What is an "Infrastructure as Code" (IAC)?
+Infrastructure as Code (IAC) is a practice of managing infrastructure using code. 
+--------------------------------------------------------------------------------------------------------
+4. What is a Terraform module, and why is it used?
+A Terraform module is a collection of Terraform configurations grouped together for reuse. It promotes code modularity and reusability.
+--------------------------------------------------------------------------------------------------------
+5. How does Terraform handle dependencies between resources?
+Terraform uses a dependency graph to determine the order in which resources are provisioned, ensuring dependencies are met.
+--------------------------------------------------------------------------------------------------------
+
+
+

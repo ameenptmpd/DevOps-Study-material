@@ -1,0 +1,154 @@
+1. Types of Services in Kubernetes:
+   - Kubernetes supports different service types, including 
+	ClusterIP: The default service type, which exposes the service internally within the cluster.
+	NodePort: Exposes the service on each node's IP at a static port.
+	LoadBalancer: service that helps distribute incoming network traffic across multiple backend services or pods.
+	ExternalName: Maps the service to a pre-defined external DNS name.
+--------------------------------------------------------------------------------------------------------		
+The cluster IP port number in Kubernetes is a port number that is assigned to a Service.
+--------------------------------------------------------------------------------------------------------
+what is node port 
+	A NodePort service in Kubernetes exposes an application to the external world by assigning a static port on each node within the cluster for external access.
+	
+	Node port range - (default 30000-32767).
+
+	To print running pods in Kubernetes,
+		kubectl get pods
+	number of running pods
+		kubectl get pods -l status=Running | wc -l
+--------------------------------------------------------------------------------------------------------
+what is etcd in Kubernetes: 		
+	etcd is a consistent and highly available key-value store used to maintain the configuration and state of a Kubernetes cluster. 
+	It stores essential information, such as the location of all running containers, configuration details, and cluster membership. 
+	It is a critical component for the proper functioning and reliability of a Kubernetes cluster.
+features of etcd
+	- Key-Value Store: etcd is a distributed key-value store, allowing data to be stored and retrieved efficiently.
+	- Consistency: It provides strong consistency guarantees, ensuring data consistency across the cluster.
+	- High Availability: etcd is designed for high availability, with support for leader election and automatic failover.
+	- Watchable Events: It supports event watching, enabling real-time notifications of changes to stored data.
+	- Distributed: etcd is distributed by nature, allowing it to scale horizontally across a cluster of machines.
+	- Transactions: It supports transactional operations, allowing multiple operations to be grouped together.
+	- Security: etcd provides security features like authentication and authorization, ensuring data protection.
+	- HTTP/gRPC APIs: It offers both HTTP and gRPC APIs for easy integration with different applications and languages.
+	- Data Versioning: etcd keeps a history of changes, allowing you to access previous versions of data.
+	- Configuration Management: It is used for managing and distributing configuration data for various services and applications.
+--------------------------------------------------------------------------------------------------------
+2. Difference between Kube Proxy and Ingress:
+   - Kube Proxy is a network proxy that maintains network rules on nodes. 
+   - Ingress is an API object that manages external access to services within a cluster, routing HTTP and HTTPS traffic.
+--------------------------------------------------------------------------------------------------------
+what is kubectl
+kubectl is a command-line interface (CLI) tool for running commands against Kubernetes clusters.
+--------------------------------------------------------------------------------------------------------
+3. What is Kubelet:
+   - Kubelet is an agent that runs on each node in a Kubernetes cluster. It ensures that containers are running in a Pod and that the containers are healthy.
+--------------------------------------------------------------------------------------------------------
+4. What is Control Plane:
+   - The Control Plane in Kubernetes manages the cluster's overall state. It includes components like the API Server, Controller Manager, Scheduler, and etcd, which coordinate and control the cluster.
+--------------------------------------------------------------------------------------------------------
+5. What is API Server in Kubernetes:
+   - The API Server is a central component that provides a RESTful API for managing and interacting with the Kubernetes cluster. It is the entry point for all administrative tasks.
+--------------------------------------------------------------------------------------------------------
+6. Advantages of Kubernetes:
+   - Container orchestration for automating deployment, scaling, and management.
+   - High availability and fault tolerance.
+   - Portability across various cloud and on-premises environments.
+   - Automatic load balancing and scaling.
+   - Efficient resource utilization.
+   - Application self-healing and rolling updates.
+--------------------------------------------------------------------------------------------------------
+7. What is Kubernetes, and why is it important for container orchestration?
+Answer: Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It is essential because it simplifies the management of containers, ensuring that applications run reliably and scale seamlessly, which is crucial in modern microservices-based architectures.
+--------------------------------------------------------------------------------------------------------
+8. Can you explain the key components of a Kubernetes cluster?
+Answer: A Kubernetes cluster consists of several key components, including:
+	- Master Node: It controls the cluster and manages its state.
+	- Node: Worker machines that run containerized applications.
+	- Pod: The smallest deployable unit in Kubernetes, encapsulating one or more containers.
+	- Service: An abstraction that exposes a set of pods as a network service.
+	- Volume: Storage that can be mounted into a container.
+	- Namespace: A logical partition within a cluster for resource isolation and management.
+--------------------------------------------------------------------------------------------------------
+9. How does Kubernetes ensure high availability and fault tolerance?
+Answer: Kubernetes ensures high availability and fault tolerance through various mechanisms, including:
+	- ReplicaSets: Ensuring a specified number of replicas (pods) are always running.
+	- Self-healing: If a pod or node fails, Kubernetes automatically replaces it.
+	- Load Balancing: Distributing incoming network traffic across pods.
+	- Horizontal Pod Autoscaling (HPA): Automatically scaling the number of pods based on resource usage.
+	- Node redundancy: Running multiple nodes to prevent single points of failure.
+--------------------------------------------------------------------------------------------------------
+10. What is a Kubernetes Deployment, and how does it differ from a ReplicaSet?
+Answer: A Deployment is a higher-level abstraction that manages ReplicaSets and provides declarative updates to applications. Deployments enable rolling updates and rollbacks, making it easier to manage application versions. A ReplicaSet, on the other hand, is more focused on ensuring a specific number of pod replicas are running at all times.
+--------------------------------------------------------------------------------------------------------
+11. What is the difference between a ConfigMap and a Secret in Kubernetes?
+Answer: A ConfigMap stores configuration data as key-value pairs, which are typically used for non-sensitive configuration data. A Secret, on the other hand, is used for sensitive data, such as passwords or API keys, and it encodes the data to ensure it's not easily readable.
+--------------------------------------------------------------------------------------------------------
+12. How does Kubernetes handle application scaling?
+Answer: Kubernetes provides two primary methods for application scaling:
+	- Horizontal Pod Autoscaling (HPA): Automatically adjusts the number of pod replicas based on CPU or custom metrics.
+	- Vertical Pod Autoscaling (VPA): Adjusts the CPU and memory requests and limits for pods to optimize resource usage.
+--------------------------------------------------------------------------------------------------------
+13. Explain the concept of Ingress in Kubernetes.
+Answer: Ingress is an API object that manages external access to services within a cluster. It provides routing, SSL termination, and load balancing for HTTP and HTTPS traffic. Ingress controllers (e.g., Nginx Ingress Controller) are responsible for implementing Ingress rules.
+--------------------------------------------------------------------------------------------------------
+14. What is the difference between a StatefulSet and a Deployment in Kubernetes?
+Answer: A StatefulSet is used for stateful applications that require stable network identities and storage. It ensures that pods are started in a specific order and provides stable network identities. A Deployment, on the other hand, is used for stateless applications and is more focused on managing the desired number of replicas with rolling updates.
+--------------------------------------------------------------------------------------------------------
+15. How do you upgrade a Kubernetes cluster to a new version?
+Answer: Upgrading a Kubernetes cluster involves upgrading the control plane and node components. The exact procedure may vary based on the Kubernetes distribution being used. Generally, you need to backup important data, upgrade the control plane components, upgrade the node components, and then test the cluster thoroughly.
+--------------------------------------------------------------------------------------------------------
+16. Describe a rolling update in Kubernetes.
+Answer: A rolling update is a strategy used by Deployments to update application versions without causing downtime. It replaces old pods with new ones gradually, ensuring that a certain number of pods are always available. This process minimizes disruptions to the application.
+--------------------------------------------------------------------------------------------------------
+
+Kubernetes commands
+-------------------
+17. kubectl get:
+   - Usage: kubectl get <resource>
+   - Description: This command is used to list resources in the cluster. You can list various types of 	resources, such as Pods, Services, Deployments, ConfigMaps, etc.
+--------------------------------------------------------------------------------------------------------
+18. kubectl describe:
+   - Usage: kubectl describe <resource> <resource_name>
+   - Description: Provides detailed information about a specific resource. It's useful for debugging and 	troubleshooting.
+--------------------------------------------------------------------------------------------------------
+19. kubectl create:
+   - Usage: kubectl create -f <manifest.yaml>
+   - Description: Creates a new resource in the cluster by specifying a YAML or JSON manifest file. It 	can be used to create Pods, Services, Deployments, and more.
+--------------------------------------------------------------------------------------------------------
+20. kubectl apply:
+   - Usage: kubectl apply -f <manifest.yaml>
+   - Description: Similar to kubectl create, but it's also used to update existing resources. If the 	resource already exists, kubectl apply will make changes based on the manifest file.
+--------------------------------------------------------------------------------------------------------
+21. kubectl delete:
+   - Usage: kubectl delete <resource> <resource_name>
+   - Description: Deletes a resource in the cluster. For example, kubectl delete pod my-pod will delete a 	Pod named "my-pod."
+--------------------------------------------------------------------------------------------------------
+22. kubectl logs:
+   - Usage: kubectl logs <pod_name>
+   - Description: Displays the logs of a specific Pod, which is useful for troubleshooting and debugging.
+--------------------------------------------------------------------------------------------------------
+23. kubectl exec:
+   - Usage: kubectl exec -it <pod_name> -- <command>
+   - Description: Executes a command in a running Pod. The -it flag allows for interactive sessions.
+--------------------------------------------------------------------------------------------------------
+24. kubectl scale:
+   - Usage: kubectl scale --replicas=<replica_count> deployment/<deployment_name>
+   - Description: Scales the number of replicas (Pods) for a specific Deployment.
+--------------------------------------------------------------------------------------------------------
+25. kubectl port-forward:
+   - Usage: kubectl port-forward <pod_name> <local_port>:<remote_port>
+   - Description: Forwards a local port to a port on a Pod, allowing you to access services running in 	the cluster directly from your local machine.
+--------------------------------------------------------------------------------------------------------
+26. kubectl get events:
+    - Usage: kubectl get events
+    - Description: Displays events related to resources in the cluster. It's useful for monitoring and 	troubleshooting cluster issues.
+--------------------------------------------------------------------------------------------------------
+27. kubectl get nodes:
+    - Usage: kubectl get nodes
+    - Description: Lists all the nodes in the cluster, providing information about their status, roles, 	and capacity.
+--------------------------------------------------------------------------------------------------------
+28. kubectl get pods --all-namespaces:
+    - Usage: kubectl get pods --all-namespaces
+    - Description: Lists Pods from all namespaces in the cluster. This is useful for seeing the status of 	all Pods in the cluster.
+--------------------------------------------------------------------------------------------------------
+

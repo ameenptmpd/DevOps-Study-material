@@ -1,0 +1,35 @@
+1. What is Jenkins?
+	Jenkins is an open-source automation server used for building, deploying, and automating projects, especially in the field of continuous integration and continuous delivery (CI/CD).
+--------------------------------------------------------------------------------------------
+4. What is CI/CD?
+	CI/CD (Continuous Integration and Continuous Delivery) is a software development approach that aims to automate and streamline the process of building, testing, and deploying applications, ensuring a faster and more reliable software delivery pipeline.
+--------------------------------------------------------------------------------------------
+5. Diff Between Continuous Delivery and Continuous Deployment?
+	- Continuous Delivery (CD) involves automatically delivering changes to a staging environment for testing and manual approval before production.
+	- Continuous Deployment (CD) automatically deploys changes to production without manual intervention, assuming they pass automated tests.
+--------------------------------------------------------------------------------------------
+2. What is CD in Jenkins?
+	CD in Jenkins stands for Continuous Delivery. It is the practice of automatically and consistently delivering software changes to a staging or production environment after passing automated tests, typically following successful CI.
+--------------------------------------------------------------------------------------------
+3. Poll SCM 
+"Poll SCM" is a trigger option that checks your source code repository for changes at scheduled intervals. If changes are detected, it triggers a build. This automates builds when new code commits are made.
+--------------------------------------------------------------------------------------------
+Multi-Branch Pipeline
+A Multi-Branch Pipeline in Jenkins is a type of pipeline that is used to automatically build, test, and deploy code from multiple branches of a version control repository, such as Git. It is often used for projects with multiple feature branches, each of which needs its own pipeline.
+	
+features of a Multi-Branch Pipeline in Jenkins:
+	- Automatic Branch Detection: Jenkins automatically detects branches in your version control repository, such as Git, and creates a pipeline for each branch.
+	- Separate Pipeline Configuration: Each branch's pipeline can have its own configuration, including different build and test steps.
+	- Webhooks and Auto-Build: Webhooks or triggers from the repository can automatically start a build when code changes are pushed to a branch.
+	- Branch-Scoped Pipelines: Pipelines can be defined for specific branches, allowing you to build, test, and deploy changes independently for each branch.
+	- Branch and Pull Request Support:
+--------------------------------------------------------------------------------------------
+3. How to Install Plugins in Jenkins?
+	You can install plugins in Jenkins by navigating to the Jenkins dashboard, clicking on "Manage Jenkins," selecting "Manage Plugins," and then choosing the "Available" tab to search for and install the desired plugins.
+--------------------------------------------------------------------------------------------
+7. Jenkins Post-Build Actions Section
+	The "Post-Build Actions" section in Jenkins allows you to define actions to be executed after a build job completes. This can include archiving artifacts, triggering other jobs, sending notifications, or performing various post-build tasks.
+--------------------------------------------------------------------------------------------
+6. Jenkins Plugin
+	Jenkins plugins are extensions that add functionality to Jenkins. They can be used to integrate Jenkins with various tools and services, enhancing its capabilities for building, testing, and deploying software.
+--------------------------------------------------------------------------------------------

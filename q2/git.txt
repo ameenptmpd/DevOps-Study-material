@@ -1,0 +1,88 @@
+1. What is Git?
+	Git is a distributed version control system that allows multiple people to collaborate on projects by tracking changes to files over time.
+--------------------------------------------------------------------------------------------
+2. what is Version control in git hub
+	Version control in GitHub is the use of Git for tracking code changes and collaborating on software projects using GitHub's web-based platform. It facilitates teamwork, code management, and issue tracking.
+--------------------------------------------------------------------------------------------
+3. What is GitHub?
+	GitHub is a web-based platform that uses Git for version control. It provides hosting for software development and collaborative tools.
+--------------------------------------------------------------------------------------------
+4. Git Pull Command
+	git pull is used to fetch changes from a remote repository and merge them into the current branch.
+		git pull <remote> <branch>
+--------------------------------------------------------------------------------------------
+5. Git Merge
+	Git merge combines changes from one branch into another. It creates a new commit that integrates the changes.
+		git merge <branch>
+--------------------------------------------------------------------------------------------
+10. What is Git Rebase
+	Git rebase is a command used to combine or integrate the changes from one branch into another by moving or reapplying the commits onto a different base commit.
+--------------------------------------------------------------------------------------------
+git push
+	git push is used to send your local changes to a remote repository, typically on a Git hosting service like GitHub or GitLab.
+		git push <remote> <branch>
+		eg: -git push origin main
+--------------------------------------------------------------------------------------------
+7. Git reset
+	"Git reset" is a Git command used to move the branch pointer to a specific commit. It can be used to undo changes or adjust the commit history. It comes with options like "--soft," "--mixed," and "--hard," each with different effects on the working directory and index.
+--------------------------------------------------------------------------------------------
+9. Git Fetch and Git Clone
+	git fetch retrieves changes from a remote repository but does not merge them.
+	git clone creates a copy of a remote repository on your local machine.
+--------------------------------------------------------------------------------------------
+12. Diff Between Git Revert and Reset
+	git revert creates a new commit that undoes a previous commit.
+	git reset moves the branch pointer to a different commit, potentially discarding some commits.
+--------------------------------------------------------------------------------------------
+14. What is Source Control Management (SCM)?
+	- SCM is a system for tracking and managing changes in source code.
+
+--------------------------------------------------------------------------------------------
+6. Git Branch
+	A Git branch is a separate line of development that allows you to work on features or fixes without affecting the main project.
+--------------------------------------------------------------------------------------------
+How to Create a Branch on GitHub
+	You can create a branch on GitHub by navigating to the repository, clicking on the "Branch" button, and then entering the new branch name.
+--------------------------------------------------------------------------------------------
+11. Git Stash
+	Git stash is a feature that allows you to temporarily save changes in your working directory without committing them, useful for switching to another branch.
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------	
+13. Git Merge vs. Git Rebase
+	Git merge creates a new commit that integrates changes from one branch into another.
+	Git rebase moves and reapplies commits from one branch on top of another, creating a linear history.
+--------------------------------------------------------------------------------------------
+15. Why is SCM important in software development?
+	- It enables collaboration, maintains version history, and safeguards against data loss.
+--------------------------------------------------------------------------------------------
+16. What are the benefits of using SCM?
+	- Version history, collaboration, easy rollback, and conflict resolution.
+--------------------------------------------------------------------------------------------
+17. What is a "repository" in SCM?
+	- It's a central storage location for code and files.
+--------------------------------------------------------------------------------------------
+18. What is the difference between centralized and distributed SCM systems?
+	- Centralized has one central repo; distributed allows multiple repos.
+--------------------------------------------------------------------------------------------
+19. What is a "commit" in SCM?
+	- A commit saves changes in the version history.
+--------------------------------------------------------------------------------------------
+20. What is a "branch" in SCM?
+	- A branch is a separate line of code development.
+--------------------------------------------------------------------------------------------
+21. What is "merge" in SCM?
+	- Merging combines changes from one branch into another.
+--------------------------------------------------------------------------------------------
+22. What is "conflict resolution" in SCM?
+	- It's the process of resolving code conflicts between developers.
+--------------------------------------------------------------------------------------------
+23. What are some popular SCM systems?
+	- Git, SVN, Mercurial, Perforce.
+--------------------------------------------------------------------------------------------

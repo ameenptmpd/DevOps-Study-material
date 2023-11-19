@@ -1,0 +1,47 @@
+1. Explain about Docker
+	Docker is a containerization platform that allows to package applications and their dependencies into lightweight containers. These containers can run consistently across various environments, making it easier to deploy and manage applications.
+--------------------------------------------------------------------------------------------
+6. What is Dockerfile
+	A Dockerfile is a text file that contains a set of instructions for building a Docker image. It specifies the base image, adds 	files and configuration, and sets up the environment for the application to run within a Docker container.
+--------------------------------------------------------------------------------------------
+3. What is Docker entry file or entry point
+entry file" or "entry point" refers to the initial executable that runs when a Docker container is started. It's specified in the Dockerfile to define what command or script should be executed when the container starts.
+--------------------------------------------------------------------------------------------
+4. Docker network types 
+
+Bridge Network: Default for communication between containers.
+Host Network: Shares host network interface.
+Overlay Network: Multi-host communication in a Docker swarm.
+Macvlan Network: Containers appear as unique devices on the network.
+None Network: Isolated network with no connectivity.
+Custom User-Defined Networks: Customized networks for specific use cases.
+--------------------------------------------------------------------------------------------
+5. Docker CMD
+	In a Dockerfile, the CMD instruction defines the default command and arguments to run when a container starts. It specifies the main executable for the container.
+	This default command can be overridden when run the container by providing a new command. So, while the CMD sets the default behavior, we can change it when starting the container.
+--------------------------------------------------------------------------------------------
+2. Explain about Docker image and container
+	- Docker Image: A Docker image is a snapshot of a file system that contains an application and 	all its dependencies. Images are used as templates to create Docker containers.
+	
+	- Docker Container: A Docker container is a runnable instance of a Docker image. It is isolated 	from the host system and runs the application in an isolated environment.
+--------------------------------------------------------------------------------------------
+3. What is Docker create
+	docker create is a command that creates a new container from an image but does not start it. This command prepares a container 	based on an image, and we can later start it using docker start.
+--------------------------------------------------------------------------------------------
+4. Diff b/w docker build & docker create
+	docker build is used to build a new Docker image from a Dockerfile, which is a script that 	defines the image's configuration.
+	docker create is used to create a new container from an existing Docker image but doesn't start 	it.
+--------------------------------------------------------------------------------------------
+5. What is Docker Hub
+	Docker Hub is a cloud-based registry service provided by Docker that allows users to store, 	share, and distribute Docker images. 	It is a central repository for finding and sharing 	container images.
+--------------------------------------------------------------------------------------------
+5. What is Docker image
+	A Docker image is a snapshot of a file system that contains an application and its dependencies, along with instructions on how to 	run the application. Images serve as templates for creating Docker containers.
+--------------------------------------------------------------------------------------------
+6. What is Docker container
+	A Docker container is a runnable instance of a Docker image. It is an isolated environment that runs an application and its 	dependencies, ensuring consistency and portability across different systems.
+--------------------------------------------------------------------------------------------
+
+
+
+

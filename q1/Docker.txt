@@ -1,0 +1,76 @@
+1. cmd , entry point in docker file
+
+	CMD instruction is used to specify the command that should be executed when the Docker container starts. It defines the default command for the container, which can be overridden by providing a command at the end of the docker run command.
+	The ENTRYPOINT instruction, on the other hand, is used to set the main command that is always executed when the container starts. Unlike CMD, the parameters are not ignored when providing a command to the docker run command.
+
+2. Other commands 
+
+	FROM : Specifies the base image for subsequent instructions. It is usually the first instruction in a Dockerfile.
+	RUN: Executes commands in a new layer and creates a new image. This is used to install packages, run scripts, or perform any other actions during the build process.
+	COPY: Copies files or directories from the build context into the container's own filesystem at a specified location.
+	ADD: Similar to COPY, but it also supports URLs and automatically unpacks local tar files.
+	WORKDIR: Sets the working directory for any RUN, CMD, ENTRYPOINT, COPY, and ADD instructions that follow it in the Dockerfile.
+	EXPOSE: Informs Docker that the container listens on the specified network ports at runtime.
+	ENV: Sets the environment variable to a specific value inside the container.
+	ARG: Defines a variable that users can pass at build-time to the builder with the docker build command using the --build-arg flag.
+	VOLUME: Creates a mount point with the specified name and marks it as holding externally mounted volumes from the native host or other containers.
+	USER: Sets the user name or UID to use when running the image.
+	HEALTHCHECK: Tells Docker how to test a container to check that it is still working.
+
+3. Difference between container and image
+	Image:
+		An image is a lightweight, standalone, and executable software package that includes everything needed to run a piece of software, including the code, runtime, system tools, system libraries, and settings. It is essentially a snapshot of a Docker container.
+		Images are read-only templates used to create Docker containers. They can be built from a Dockerfile using the docker build command or pulled from a registry using the docker pull command.
+		Images are used as the basis for creating containers. They can be versioned and distributed to other systems or users.
+
+	Container:
+		A container is a runtime instance of an image—basically, a running process isolated from the host and other containers. Containers are lightweight, portable, and self-sufficient, allowing applications to be easily deployed and run consistently in various environments. Each container is created from a specific image and represents a running instance of that application, providing an isolated environment for running the application. 
+		In summary, images are the blueprints used to create containers, while containers are the actual runtime instances of those images. Containers provide a consistent environment for running applications, and images provide a way to package and distribute software with all its dependencies.
+
+4. Types of docker networks ?
+
+	Docker provides several types of networks to facilitate communication between containers and between containers and the outside world. These networks offer different features and functionalities to meet various use cases. Here are some of the types of Docker networks:
+	Bridge network: This is the default network that enables communication between containers on the same Docker daemon host. Containers connected to the same bridge network can communicate with each other via IP addresses. It also allows the containers to communicate with external networks using NAT (Network Address Translation).
+	Host network: With the host network mode, a container shares the network namespace with the Docker host. This means the container does not have network isolation from the host and can use the host's network directly. This can be beneficial for performance-critical applications that require full access to the host's network stack.
+	Overlay network: This type of network allows containers to communicate across multiple Docker daemons. It facilitates communication between containers running on different Docker hosts or even different cloud providers. It is particularly useful for container orchestration and clustering systems, enabling seamless communication between containers across the cluster.
+	Macvlan network: Macvlan allows you to assign a MAC address to a container, making it appear as a physical device on the network. This is useful when you need to connect containers directly to external networks, giving them direct access to the physical network without any encapsulation.
+	None network: Containers attached to the none network have no access to external networks and can only communicate with the Docker host. This can be useful in scenarios where you want to completely isolate a container from the network.
+	Custom networks: Docker also allows you to create your custom networks with specific configurations, enabling you to define your network's behavior, IP address range, and other properties according to your application's requirements. Custom networks provide flexibility and control over the networking environment for your containers.
+
+5. what does docker buid command do & build vs run command
+	The docker build command is used to build Docker images from a Dockerfile. This process involves executing each instruction in the Dockerfile and creating a new layer for each instruction, ultimately producing a final image. The resulting image can be tagged and used to create containers.
+	The docker run command, on the other hand, is used to create and start a new container from a Docker image. When you run docker run, Docker takes the specified image and starts a container based on it. You can also provide additional options and configurations to the docker run command, such as exposing ports, setting environment variables, or specifying volumes to be mounted.
+	docker create
+		The docker create command is used to create a new container but does not start it. It returns a container ID that can be used in conjunction with other commands. This command is particularly useful when you want to set up a container without starting it immediately.
+		docker create [OPTIONS] IMAGE [COMMAND] [ARG...]
+
+6. what is docker hub
+	Docker Hub is a cloud-based registry service provided by Docker that allows you to store and manage Docker images. It provides a centralized resource for container image discovery, distribution, and change management. Docker Hub offers the following key features:
+	Image Repositories: It enables you to store and manage your Docker images, either publicly or privately.
+	Collaboration and Sharing: Docker Hub facilitates collaboration by allowing users to share Docker images with their team members or the broader community.
+	Automated Builds: It provides the functionality to automatically build Docker images from source code repositories, making it easier to manage the continuous integration and deployment process.
+	Webhooks and APIs: Docker Hub offers webhooks and APIs that can be integrated with other tools and services, enabling you to automate various processes related to your Docker images.
+	User Access Control: It allows you to manage user access and permissions for private repositories, ensuring that only authorized users can access sensitive images.
+	Official Images: Docker Hub hosts a collection of official images that are curated and maintained by Docker, ensuring that users have access to trusted and reliable base images for their containers.
+
+7. what is Virtualization and Docker Containerization
+
+	Virtualization:
+		- Creation of virtual versions of hardware, operating systems, and network resources.
+		- Enables running multiple operating systems on a single physical machine.
+		- Each virtual machine runs its own operating system, isolated from others.
+	Docker Containerization:
+		- Platform for developing, shipping, and running applications in containers.
+		- Containers package applications and their dependencies, running on any Linux server.
+		- Containers share the host system's operating system kernel, making them lightweight and fast.
+
+8. diff between Virtualization and Docker Containerization
+	Differences:
+		- Virtualization creates multiple virtual machines, while containerization isolates applications within a single operating system.
+		- Virtual machines emulate full-fledged computers, while containers share the host's operating system kernel.
+		- Virtual machines consume more resources and have slower start times compared to containers.
+	Similarities:
+
+		- Both provide isolation for running applications in contained environments.
+		- Both contribute to efficient resource utilization by enabling multiple applications to run on one physical machine.
+

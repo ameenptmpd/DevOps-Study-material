@@ -1,0 +1,24 @@
+1. What is Maven?
+	Maven is a build automation and project management tool used in software development. It simplifies the build process, manages dependencies, and helps in project configuration.
+--------------------------------------------------------------------------------------------
+2. Mvn Package vs. Maven Build
+	- `mvn package` is a Maven command that compiles the source code, runs tests, and packages the 	 	 application into a distributable format, typically a JAR or WAR file.
+	- `mvn build` is not a standard Maven command. which involves executing a series of Maven goals 	 in a specific order to compile, test, and package the project.
+--------------------------------------------------------------------------------------------
+3. What is pom.xml?
+	`pom.xml` is the Project Object Model file in Maven. It is an XML file that describes the project's configuration, dependencies, plugins, and other settings. It serves as the project's build descriptor and is used by Maven to manage the project's build lifecycle.
+--------------------------------------------------------------------------------------------
+mvn clean phase of the Maven build lifecycle removes any previously generated build artifacts. This ensures that you're starting with a clean slate, removing any previously compiled code and generated files.
+
+install phase compiles the source code, runs tests, and packages the application into a distributable format (typically a JAR file). It then installs this artifact in the local Maven repository,
+--------------------------------------------------------------------------------------------
+4. `mvn install` and `mvn package` are both Maven goals (commands), but they serve different purposes:
+
+- `mvn install`:
+   - The `install` goal is used to install the project's artifacts (typically JAR or WAR files) into the 	local Maven repository.
+   - It compiles the source code, runs tests, packages the project, and then installs the resulting 	artifact (e.g., JAR) into your local Maven repository.
+   - Other projects can use this locally installed artifact as a dependency if they are part of the same 	multi-module project or if they are configured to use the local repository.
+
+- `mvn package`:
+   - The `package` goal compiles the source code, runs tests, and packages the project into an artifact 	(e.g., JAR or WAR) in the `target` directory of the project, but it does not install it in the 	local Maven repository.
+   - It is used for creating the distributable package of the project that can be used for deployment or 	distribution.

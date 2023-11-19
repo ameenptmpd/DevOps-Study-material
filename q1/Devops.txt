@@ -1,0 +1,18 @@
+1. Advantages of DevOps
+
+	- Faster delivery of features**: Enables quick adaptation to market changes and customer needs.
+	- Increased frequency of deployments**: Facilitates frequent and reliable software releases, improving customer satisfaction.
+	- Higher quality products**: Identifies and addresses issues earlier in the development process, resulting in superior software quality.
+	- Improved collaboration**: Promotes collaboration between teams, fostering a culture of shared responsibility and ownership.
+	- Greater efficiency and productivity**: Automates tasks and streamlines processes, allowing teams to focus on high-value tasks and innovation.
+	- Enhanced customer experience**: Leads to faster delivery cycles and more reliable software, increasing customer satisfaction and loyalty.
+	- Reduced risk**: Continuous monitoring and feedback loops help in identifying and addressing issues promptly, minimizing the risk of failures and reducing downtime.
+
+2. CI (Continuous Integration)**
+	It's the practice of developers regularly merging their code changes into a central repository, which is then verified by automated build and tests to catch bugs early.
+
+3. Continuous Delivery**
+	It's the practice of automatically preparing code changes for a release to production, ensuring that your software can be deployed at any time with minimal risk.
+
+4. Continuous Deployment**
+	It's the practice of automatically deploying code changes to production or a staging environment after passing through the stages of continuous integration and continuous delivery.
